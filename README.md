@@ -1,4 +1,4 @@
-# go-mega-sample
+# frame-sample
 基于go-mega-master修改的web框架
 
 
