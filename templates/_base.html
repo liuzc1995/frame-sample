@@ -2,17 +2,13 @@
 
 <head>
     {{if .Title}}
-    <title>{{.Title}} - blog</title>
+    <title>{{.Title}}</title>
     {{else}}
-    <title>Welcome to blog!</title>
+    <title>Welcome!</title>
     {{end}}
 </head>
 
 <body>
-    <div>
-        
-    </div>
-
     {{template "content" .}}
 </body>
 
