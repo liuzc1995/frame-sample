@@ -1,6 +1,6 @@
 mysql:
   charset: utf8
-  db: sample-frame
+  db: gggo
   host: localhost
   password: schoollzc1
   user: root
