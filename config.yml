@@ -1,6 +1,6 @@
 mysql:
   charset: utf8
-  db: go_mege
+  db: sample-frame
   host: localhost
   password: schoollzc1
   user: root
