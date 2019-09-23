@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    {{if .Title}}
+    <title>{{.Title}} - blog</title>
+    {{else}}
+    <title>Welcome to blog!</title>
+    {{end}}
+</head>
+
+<body>
+    <div>
+        
+    </div>
+
+    {{template "content" .}}
+</body>
+
+</html>
