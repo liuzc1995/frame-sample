@@ -14,6 +14,13 @@ func (h home) registerRoutes() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", indexHandler)
 	http.Handle("/", r)
+
+	staticHandler()
+}
+
+//静态资源路径配置
+func staticHandler() {
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 }
 
 //tpPath模板路径,相对template目录文件路径

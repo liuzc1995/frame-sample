@@ -34,5 +34,3 @@ func GetMysqlConnectingString() string {
 
 	return fmt.Sprintf("%s:%s@tcp(%s:3306)/%s?charset=%s&parseTime=true", usr, pwd, host, db, charset)
 }
-
-//邮件配置
