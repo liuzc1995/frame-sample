@@ -8,16 +8,17 @@ import (
 
 //初始config
 func init() {
-	projectName := "sample-frame"
-	getConfig(projectName)
+	getConfig()
 }
 
 //设置config
-func getConfig(projectName string) {
+func getConfig() {
 	viper.SetConfigName("config") // name of config file (without extension)
 
-	viper.AddConfigPath(".") // optionally look for config in the working directory
+	viper.AddConfigPath("../..")
 
+	viper.AddConfigPath("../") // optionally look for config in the working directory
+	viper.SetConfigType("yaml")
 	err := viper.ReadInConfig() // Find and read the config file
 	if err != nil {             // Handle errors reading the config file
 		panic(fmt.Errorf("Fatal error config file: %s", err))
