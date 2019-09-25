@@ -4,3 +4,4 @@ mysql:
   host: localhost
   password: schoollzc1
   user: root
+port: 8888

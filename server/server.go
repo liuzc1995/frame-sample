@@ -3,6 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
+	"gggo/config"
 	"gggo/controller"
 	"gggo/model"
 	"log"
@@ -39,6 +40,6 @@ func main() {
 	//开启路由
 	controller.Startup()
 	//监听
-	http.ListenAndServe(":8888", context.ClearHandler(http.DefaultServeMux))
+	http.ListenAndServe(":"+config.GetPort(), context.ClearHandler(http.DefaultServeMux))
 
 }

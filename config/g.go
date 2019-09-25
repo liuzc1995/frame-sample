@@ -34,3 +34,7 @@ func GetMysqlConnectingString() string {
 
 	return fmt.Sprintf("%s:%s@tcp(%s:3306)/%s?charset=%s&parseTime=true", usr, pwd, host, db, charset)
 }
+
+func GetPort() string {
+	return viper.GetString("port")
+}
