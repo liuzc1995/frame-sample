@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"gggo/vm"
+	"github.com/542213314/frame-sample/server/vm"
 	"net/http"
 
 	"github.com/gorilla/mux"

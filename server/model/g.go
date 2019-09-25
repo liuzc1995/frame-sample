@@ -1,7 +1,7 @@
 package model
 
 import (
-	"gggo/config"
+	"github.com/542213314/frame-sample/config"
 	"log"
 
 	"github.com/jinzhu/gorm"

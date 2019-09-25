@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gggo/model"
+	"github.com/542213314/frame-sample/server/model"
 	"log"
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"

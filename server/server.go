@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"gggo/config"
-	"gggo/controller"
-	"gggo/model"
+	"github.com/542213314/frame-sample/config"
+	"github.com/542213314/frame-sample/server/controller"
+	"github.com/542213314/frame-sample/server/model"
 	"log"
 	"net/http"
 	"os"
