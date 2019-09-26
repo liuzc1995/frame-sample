@@ -4,4 +4,10 @@ mysql:
   host: localhost
   password: schoollzc1
   user: root
-port: 8888
+server:
+  port: 8888
+  log: "run/server.log"
+  pid: "run/server.pid"
+  watch_path:
+    - "./server.go"
+    - "./watch.go"

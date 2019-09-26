@@ -36,6 +36,22 @@ func GetMysqlConnectingString() string {
 	return fmt.Sprintf("%s:%s@tcp(%s:3306)/%s?charset=%s&parseTime=true", usr, pwd, host, db, charset)
 }
 
+//端口
 func GetPort() string {
-	return viper.GetString("port")
+	return viper.GetString("server.port")
+}
+
+//日志
+func GetLog() string {
+	return viper.GetString("server.log")
+}
+
+//进程
+func GetPid() string {
+	return viper.GetString("server.pid")
+}
+
+//监听文件路径
+func GetWatchPath() []string {
+	return viper.GetStringSlice("server.watch_path")
 }

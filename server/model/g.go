@@ -2,7 +2,7 @@ package model
 
 import (
 	"github.com/542213314/frame-sample/config"
-	"log"
+	"golanger.com/log"
 
 	"github.com/jinzhu/gorm"
 )

@@ -11,7 +11,18 @@
 
 
 //2019-09-25
-增加
+新增
 1.静态资源目录配置
-2.日志输出文件
+2.日志输出文件 生成目录 /run/
 
+//2019-09-26
+新增
+1.文件监控
+    可配置 config.yml 配置项 server.watch_path 后追加虚监控的目录或者文件
+    执行方式: 1. go build 生成可执行文件 2. 运行可执行文件 ./server -auto=true  注:运行可执行文件后/run/目录下生成server.pid来记录进程
+2.端口、日志、进程、监控文件路径可配置
+    config.yml下
+    server.port:       端口配置
+    server.log:        日志配置
+    server.pid:        进程配置
+    server.watch_path: 端口配置
