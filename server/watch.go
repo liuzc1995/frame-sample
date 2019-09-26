@@ -18,7 +18,6 @@ import (
 )
 
 var (
-	serverPid   = flag.String("pid", "run/server.pid", "Log file name") //进程
 	autoWatch   = flag.String("auto", "false", `when u modify some dir to auto restart this app`)
 	deferToAuto = flag.Duration("defer", 1500*time.Millisecond, `defer to when u modify some file`)
 	appName     = strings.TrimRight(filepath.Base(os.Args[0]), ".auto")
