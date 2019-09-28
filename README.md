@@ -1,6 +1,9 @@
 # frame-sample
+
+此框架是本人基于本人师傅fook的go web框架及BONFY的go-mege-master框架搭建而成
+
 //2019-09-23
-基于go-mega-master修改的web框架
+go web框架
 
 
 修改点注意:
@@ -31,3 +34,5 @@
 修改点
 1.路由调整
     分层配置路由 依赖库mux
+
+
