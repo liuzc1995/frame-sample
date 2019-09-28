@@ -13,8 +13,8 @@ type home struct{}
 //设置路由
 func (h home) registerRoutes() {
 	r := mux.NewRouter()
-	index := r.PathPrefix("/").Subrouter()
-	initUserPath(index)
+	iPath := r.PathPrefix("/").Subrouter()
+	initUserPath(iPath)
 
 	r.HandleFunc("/", indexHandler)                                                                     //首页路由
 	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))) //静态资源配置
