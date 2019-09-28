@@ -16,8 +16,10 @@ func (h home) registerRoutes() {
 	iPath := r.PathPrefix("/").Subrouter()
 	initUserPath(iPath)
 
-	r.HandleFunc("/", indexHandler)                                                                     //首页路由
-	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))) //静态资源配置
+	//首页路由
+	r.HandleFunc("/", indexHandler)
+	//静态资源配置
+	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 	http.Handle("/", r)
 }
 
