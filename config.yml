@@ -9,5 +9,10 @@ server:
   log: "run/server.log"
   pid: "run/server.pid"
   watch_path:
+    - "../config.yml"
     - "./server.go"
     - "./watch.go"
+    - "./templates"
+    - "./vm"
+    - "./controller"
+    - "./model"

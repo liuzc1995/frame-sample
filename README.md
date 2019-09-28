@@ -26,3 +26,8 @@
     server.log:        日志配置
     server.pid:        进程配置
     server.watch_path: 端口配置
+
+//2019-09-28
+修改点
+1.路由调整
+    分层配置路由 依赖库mux

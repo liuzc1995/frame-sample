@@ -1,8 +1,9 @@
 package controller
 
 import (
-	"github.com/542213314/frame-sample/server/vm"
 	"net/http"
+
+	"github.com/542213314/frame-sample/server/vm"
 
 	"github.com/gorilla/mux"
 )
@@ -12,15 +13,18 @@ type home struct{}
 //设置路由
 func (h home) registerRoutes() {
 	r := mux.NewRouter()
-	r.HandleFunc("/", indexHandler)
-	http.Handle("/", r)
+	index := r.PathPrefix("/").Subrouter()
+	initUserPath(index)
 
-	staticHandler()
+	r.HandleFunc("/", indexHandler)                                                                     //首页路由
+	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("static")))) //静态资源配置
+	http.Handle("/", r)
 }
 
-//静态资源路径配置
-func staticHandler() {
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+//配置可对 /user下发送请求的路由
+func initUserPath(r *mux.Router) {
+	s := r.PathPrefix("/user").Subrouter()
+	s.HandleFunc("/list", UserListHandler)
 }
 
 //tpPath模板路径,相对template目录文件路径
@@ -35,4 +39,9 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 		v := vop.GetVM()
 		templates[tpPath].Execute(w, &v)
 	}
+}
+
+// /user/list
+func UserListHandler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("Hello World"))
 }
