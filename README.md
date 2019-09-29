@@ -1,6 +1,6 @@
 go web框架
 ===
-## 此框架是本人基于本人师傅fook的go web框架及BONFY的go-mege-master框架搭建而成
+## 此框架是本人基于本人导师fook的go web框架及BONFY的go-mege-master框架搭建而成
 
 # 2019-09-23
 
