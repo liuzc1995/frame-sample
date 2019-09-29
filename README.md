@@ -4,9 +4,9 @@ go web框架
 
 # 2019-09-23
 
-修改点注意:
+### 修改点:
 
-## 关于模板添加
+#### 关于模板添加
         经修改,可在template文件夹下自定义多个文件夹进行模板分类
         1.模板添加在template根目录下的自定义文件夹中，例：template/content/index.html。
         2.目前模板只识别template目录下的一级文件夹.html文件
@@ -27,7 +27,7 @@ go web框架
                 go build 生成可执行文件 
                 运行可执行文件 ./server -auto=true  注:运行可执行文件后/run/目录下生成server.pid来记录进程
 2. 端口、日志、进程、监控文件路径可配置
-        config.yml下
+> config.yml
 * server.port:       端口配置
 * server.log:        日志配置
 * server.pid:        进程配置
