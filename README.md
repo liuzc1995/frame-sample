@@ -25,13 +25,14 @@ go web框架
         可配置 config.yml 配置项 server.watch_path 后追加虚监控的目录或者文件
         执行方式: 
                 go build 生成可执行文件 
-                运行可执行文件 ./server -auto=true  注:运行可执行文件后/run/目录下生成server.pid来记录进程
+                运行可执行文件 ./server -auto=true  
+                * 注:运行可执行文件后/run/目录下生成server.pid来记录进程
         端口、日志、进程、监控文件路径可配置
-        config.yml
-* server.port:       端口配置
-* server.log:        日志配置
-* server.pid:        进程配置
-* server.watch_path: 端口配置
+            config.yml文件:
+                server.port:       端口配置
+                server.log:        日志配置
+                server.pid:        进程配置
+                server.watch_path: 端口配置
 
 # 2019-09-28
 ### 修改点
