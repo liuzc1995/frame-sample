@@ -32,37 +32,37 @@ go web框架
 修改点  
 1.路由调整  
     分层配置路由 依赖库mux  
-2.tree
+2.tree  
 
-├── cmd
-│   └── db_init
-│       └── main.go
-├── config
-│   └── g.go
-├── config.yml
-├── go.mod
-├── go.sum
-└── server
-    ├── controller
-    │   ├── g.go
-    │   ├── home.go
-    │   └── utils.go
-    ├── model
-    │   ├── g.go
-    │   ├── user.go
-    │   └── utils.go
-    ├── run
-    ├── server.go
-    ├── static
-    │   ├── css
-    │   │   └── global.css
-    │   ├── img
-    │   └── js
-    ├── templates
-    │   ├── _base.html
-    │   └── index
-    │       └── index.html
-    ├── vm
-    │   ├── g.go
-    │   └── index.go
-    └── watch.go
+├── cmd  
+│   └── db_init  
+│       └── main.go  
+├── config  
+│   └── g.go  
+├── config.yml  
+├── go.mod  
+├── go.sum  
+└── server  
+    ├── controller  
+    │   ├── g.go  
+    │   ├── home.go  
+    │   └── utils.go  
+    ├── model  
+    │   ├── g.go  
+    │   ├── user.go  
+    │   └── utils.go  
+    ├── run  
+    ├── server.go  
+    ├── static  
+    │   ├── css  
+    │   │   └── global.css  
+    │   ├── img  
+    │   └── js  
+    ├── templates  
+    │   ├── _base.html  
+    │   └── index  
+    │       └── index.html  
+    ├── vm  
+    │   ├── g.go  
+    │   └── index.go  
+    └── watch.go  
