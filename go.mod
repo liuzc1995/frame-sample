@@ -42,13 +42,10 @@ require (
 	github.com/stretchr/testify v1.4.0 // indirect
 	github.com/ugorji/go v1.1.7 // indirect
 	go.etcd.io/bbolt v1.3.3 // indirect
-	golang.org/x/crypto v0.0.0-20190829043050-9756ffdc2472 // indirect
+	golang.org/x/crypto v0.1.0 // indirect
 	golang.org/x/exp v0.0.0-20190829153037-c13cbed26979 // indirect
 	golang.org/x/image v0.0.0-20190902063713-cb417be4ba39 // indirect
 	golang.org/x/mobile v0.0.0-20190830201351-c6da95954960 // indirect
-	golang.org/x/net v0.0.0-20190827160401-ba9fcec4b297 // indirect
-	golang.org/x/sys v0.0.0-20190902133755-9109b7679e13 // indirect
-	golang.org/x/tools v0.0.0-20190903025054-afe7f8212f0d // indirect
 	golanger.com v0.0.0-00010101000000-000000000000
 	google.golang.org/api v0.9.0 // indirect
 	google.golang.org/appengine v1.6.2 // indirect
